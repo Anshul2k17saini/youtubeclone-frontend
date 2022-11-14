@@ -38,6 +38,9 @@ import { VideoCardComponent } from './video-card/video-card.component';
 import {MatCardModule} from '@angular/material/card';
 import { CallbackComponent } from './callback/callback.component';
 import { CommentsComponent } from './comments/comments.component';
+import { MatMenuModule}  from '@angular/material/menu'
+
+
 
 @NgModule({
   declarations: [
@@ -82,7 +85,8 @@ import { CommentsComponent } from './comments/comments.component';
     AuthConfigModule, 
     MatSidenavModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatMenuModule
   ],
   providers: [
     {provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi:true}
